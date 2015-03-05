@@ -7,14 +7,26 @@ android:
     - tools
     - build-tools-21.1.1
     - android-21
+    - android-20
+    - android-19
+    - android-18
+    - android-17
+    - android-16
+    - android-15
     - extra-android-m2repository
     - extra-google-m2repository
     - extra-google-google_play_services
-    
+
 env:
   matrix:
     - ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a
-  
+    - ANDROID_TARGET=android-20  ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-18  ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-15  ANDROID_ABI=armeabi-v7a
+
 script: ./gradlew test --info
 
 notifications:
