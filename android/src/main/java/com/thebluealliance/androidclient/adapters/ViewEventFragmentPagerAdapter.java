@@ -1,9 +1,11 @@
 package com.thebluealliance.androidclient.adapters;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.thebluealliance.androidclient.R;
 import com.thebluealliance.androidclient.fragments.event.EventAlliancesFragment;
 import com.thebluealliance.androidclient.fragments.event.EventAwardsFragment;
 import com.thebluealliance.androidclient.fragments.event.EventDistrictPointsFragment;
@@ -18,31 +20,42 @@ import com.thebluealliance.androidclient.fragments.event.EventTeamsFragment;
  */
 public class ViewEventFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public final String[] TITLES = {"Info", "Teams", "Rankings", "Matches", "Alliances", "District Points", "Stats", "Awards"};
+    public final int[] TAB_TITLE_RES_IDS = {R.string.tab_event_info,
+            R.string.tab_event_teams,
+            R.string.tab_event_rankings,
+            R.string.tab_event_matches,
+            R.string.tab_event_alliances,
+            R.string.tab_event_district_points,
+            R.string.tab_event_stats,
+            R.string.tab_event_awards};
+
     public static final int TAB_INFO = 0,
-        TAB_TEAMS = 1,
-        TAB_RANKINGS= 2,
-        TAB_MATCHES = 3,
-        TAB_ALLIANCES = 4,
-        TAB_DISTRICT_POINTS = 5,
-        TAB_STATS = 6,
-        TAB_AWARDS = 7;
+            TAB_TEAMS = 1,
+            TAB_RANKINGS = 2,
+            TAB_MATCHES = 3,
+            TAB_ALLIANCES = 4,
+            TAB_DISTRICT_POINTS = 5,
+            TAB_STATS = 6,
+            TAB_AWARDS = 7;
 
     private String mEventKey;
+    private Context c;
 
-    public ViewEventFragmentPagerAdapter(FragmentManager fm, String eventKey) {
+    public ViewEventFragmentPagerAdapter(Context c, FragmentManager fm, String eventKey) {
         super(fm);
+        this.c = c.getApplicationContext();
         mEventKey = eventKey;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return TITLES[position];
+
+        return c.getString(TAB_TITLE_RES_IDS[position]);
     }
 
     @Override
     public int getCount() {
-        return TITLES.length;
+        return TAB_TITLE_RES_IDS.length;
     }
 
 

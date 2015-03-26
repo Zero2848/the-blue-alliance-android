@@ -134,7 +134,7 @@ public class PopulateTeamAtDistrictSummary extends AsyncTask<String, Void, APIRe
         View view = fragment.getView();
         if (view != null && activity != null) {
             if (activity.getSupportActionBar() != null) {
-                activity.setActionBarTitle(String.format(activity.getString(R.string.team_actionbar_title), teamKey.substring(3)));
+                activity.setActionBarTitle(String.format(activity.getString(R.string.team_toolbar_title), teamKey.substring(3)));
                 activity.setActionBarSubtitle("@ " + districtKey.substring(0, 4) + " " + districtKey.substring(4).toUpperCase());
             }
             ListViewAdapter adapter = new ListViewAdapter(activity, summaryItems);

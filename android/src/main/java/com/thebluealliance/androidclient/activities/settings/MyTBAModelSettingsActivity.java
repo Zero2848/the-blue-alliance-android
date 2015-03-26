@@ -94,7 +94,7 @@ public class MyTBAModelSettingsActivity extends BaseActivity implements View.OnC
                 onNotificationSettingsCloseButtonClick();
             }
         });
-        toolbar.setNavigationContentDescription(R.string.close);
+        toolbar.setNavigationContentDescription(R.string.action_close);
 
         if (Utilities.hasLApis()) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.accent_dark));

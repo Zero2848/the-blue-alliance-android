@@ -192,7 +192,7 @@ public class ViewTeamActivity extends FABNotificationSettingsActivity implements
             bar.setDisplayHomeAsUpEnabled(true);
             bar.setDisplayShowTitleEnabled(false);
             String teamNumber = mTeamKey.replace("frc", "");
-            yearSelectorTitle.setText(String.format(getString(R.string.team_actionbar_title), teamNumber));
+            yearSelectorTitle.setText(String.format(getString(R.string.team_toolbar_title), teamNumber));
 
             // If we call this and the years participated haven't been loaded yet, don't try to use them
             if (yearsParticipated != null) {

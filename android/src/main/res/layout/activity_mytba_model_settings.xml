@@ -10,7 +10,7 @@
         style="@style/DefaultLightToolbarStyle"
         app:contentInsetStart="72dp"
         app:navigationIcon="@drawable/ic_close_black_24dp"
-        app:navigationContentDescription="@string/close"
+        app:navigationContentDescription="@string/action_close"
         android:background="@color/accent" />
 
     <FrameLayout

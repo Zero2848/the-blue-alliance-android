@@ -7,7 +7,7 @@
         android:alphabeticShortcut="r"
         android:icon="@drawable/ic_refresh_white_24dp"
         android:orderInCategory="1"
-        android:title="@string/menuitem_refresh"
+        android:title="@string/action_refresh"
         app:showAsAction="ifRoom" />
 
 </menu>

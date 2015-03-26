@@ -97,7 +97,7 @@ public abstract class FABNotificationSettingsActivity extends RefreshableHostAct
                 onNotificationSettingsCloseButtonClick();
             }
         });
-        notificationSettingsToolbar.setNavigationContentDescription(R.string.close);
+        notificationSettingsToolbar.setNavigationContentDescription(R.string.action_close);
 
         foregroundDim = findViewById(R.id.activity_foreground_dim);
 

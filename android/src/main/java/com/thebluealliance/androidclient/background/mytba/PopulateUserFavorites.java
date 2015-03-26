@@ -100,7 +100,7 @@ public class PopulateUserFavorites extends AsyncTask<Void, Void, APIResponse.COD
             TextView noDataText = (TextView)view.findViewById(R.id.no_data);
             ListView listView = (ListView) fragment.getView().findViewById(R.id.list);
             if (code == APIResponse.CODE.NODATA || favorites == null || favorites.isEmpty()) {
-                noDataText.setText(activity.getString(R.string.no_favorite_data));
+                noDataText.setText(activity.getString(R.string.mytba_no_favorite_data));
                 noDataText.setVisibility(View.VISIBLE);
                 listView.setVisibility(View.GONE);
             } else {

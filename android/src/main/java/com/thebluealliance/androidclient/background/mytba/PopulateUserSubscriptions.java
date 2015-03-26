@@ -100,7 +100,7 @@ public class PopulateUserSubscriptions extends AsyncTask<Void, Void, APIResponse
             TextView noDataText = (TextView)view.findViewById(R.id.no_data);
             ListView listView = (ListView) fragment.getView().findViewById(R.id.list);
             if (code == APIResponse.CODE.NODATA || subscriptions == null || subscriptions.isEmpty()) {
-                noDataText.setText(activity.getString(R.string.no_subscription_data));
+                noDataText.setText(activity.getString(R.string.mytba_no_subscription_data));
                 noDataText.setVisibility(View.VISIBLE);
                 listView.setVisibility(View.GONE);
             } else {

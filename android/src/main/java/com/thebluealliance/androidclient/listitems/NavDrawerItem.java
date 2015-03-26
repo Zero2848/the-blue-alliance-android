@@ -14,17 +14,13 @@ import com.thebluealliance.androidclient.views.SelectableImage;
 public class NavDrawerItem implements ListItem {
 
     private int id;
-    private String title;
+    private int titleStringId;
     private int icon = -1;
     private int layout;
 
-    public NavDrawerItem(String title) {
-        this.title = title;
-    }
-
-    public NavDrawerItem(int id, String title, int icon, int layout) {
+    public NavDrawerItem(int id, int titleStringId, int icon, int layout) {
         this.id = id;
-        this.title = title;
+        this.titleStringId = titleStringId;
         this.icon = icon;
         this.layout = layout;
     }
@@ -44,7 +40,7 @@ public class NavDrawerItem implements ListItem {
             ((SelectableImage) convertView.findViewById(R.id.icon)).setImageResource(icon);
         }
 
-        ((TextView) convertView.findViewById(R.id.title)).setText(title);
+        ((TextView) convertView.findViewById(R.id.title)).setText(titleStringId);
 
         return convertView;
     }

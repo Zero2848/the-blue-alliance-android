@@ -80,13 +80,13 @@ public class NavigationDrawerFragment extends Fragment {
     private ScrimInsetsFrameLayout scrimLayout;
 
     static {
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_my_tba, "myTBA", R.drawable.ic_grade_black_24dp, R.layout.nav_drawer_item));
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_events, "Events", R.drawable.ic_event_black_24dp, R.layout.nav_drawer_item));
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_districts, "Districts", R.drawable.ic_assignment_black_24dp, R.layout.nav_drawer_item));
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_teams, "Teams", R.drawable.ic_group_black_24dp, R.layout.nav_drawer_item));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_my_tba, R.string.nav_drawer_item_mytba, R.drawable.ic_grade_black_24dp, R.layout.nav_drawer_item));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_events, R.string.nav_drawer_item_events, R.drawable.ic_event_black_24dp, R.layout.nav_drawer_item));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_districts, R.string.nav_drawer_item_districts, R.drawable.ic_assignment_black_24dp, R.layout.nav_drawer_item));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_teams, R.string.nav_drawer_item_teams, R.drawable.ic_group_black_24dp, R.layout.nav_drawer_item));
         //NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_insights, "Insights", R.drawable.insights_icon_selector, R.layout.nav_drawer_item));
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_notifications, "Recent Notifications", R.drawable.ic_notifications_black_24dp, R.layout.nav_drawer_item));
-        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_settings, "Settings", R.drawable.ic_settings_black_24dp, R.layout.nav_drawer_item_small));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_notifications, R.string.nav_drawer_item_recent_notifications, R.drawable.ic_notifications_black_24dp, R.layout.nav_drawer_item));
+        NAVIGATION_ITEMS.add(new NavDrawerItem(R.id.nav_item_settings, R.string.nav_drawer_item_settings, R.drawable.ic_settings_black_24dp, R.layout.nav_drawer_item_small));
     }
 
     /**

@@ -82,7 +82,7 @@ public class ViewEventActivity extends FABNotificationSettingsActivity implement
         hideWarningMessage();
 
         pager = (ViewPager) findViewById(R.id.view_pager);
-        adapter = new ViewEventFragmentPagerAdapter(getSupportFragmentManager(), mEventKey);
+        adapter = new ViewEventFragmentPagerAdapter(this, getSupportFragmentManager(), mEventKey);
         pager.setAdapter(adapter);
         // To support refreshing, all pages must be held in memory at once
         // This should be increased if we ever add more pages
@@ -116,7 +116,7 @@ public class ViewEventActivity extends FABNotificationSettingsActivity implement
             throw new IllegalArgumentException("ViewEventActivity must be constructed with a key");
         }
         setModelKey(mEventKey, ModelHelper.MODELS.EVENT);
-        adapter = new ViewEventFragmentPagerAdapter(getSupportFragmentManager(), mEventKey);
+        adapter = new ViewEventFragmentPagerAdapter(this, getSupportFragmentManager(), mEventKey);
         pager.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         Log.d(Constants.LOG_TAG, "Got new ViewEvent intent with key: "+mEventKey);

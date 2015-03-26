@@ -47,7 +47,7 @@
                 android:maxLines="1"
                 android:paddingBottom="16dp"
                 android:paddingLeft="16dp"
-                android:text="Matias Duarte"
+                android:text="@string/mytba_default_user_name"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold" />
