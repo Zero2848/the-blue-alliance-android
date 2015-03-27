@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View Team -->
+    <string name="currently_competing">currently competing at</string>
+    <string name="team_toolbar_title">Team %s</string>
+
+    <!-- Tabs -->
+    <string name="view_team_tab_info">Info</string>
+    <string name="view_team_tab_events">Events</string>
+    <string name="view_team_tab_media">Media</string>
+
+    <!-- Team Media -->
+    <string name="team_media_cd_header">Chief Delphi Photos</string>
+    <string name="team_media_yt_header">YouTube Videos</string>
+</resources>

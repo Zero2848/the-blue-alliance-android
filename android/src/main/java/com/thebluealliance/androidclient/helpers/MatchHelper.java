@@ -155,17 +155,17 @@ public class MatchHelper {
      * Possible statuses a team could be in.
      */
     public enum EventStatus {
-        PLAYING_IN_QUALS(R.string.playing_in_quals),
-        NOT_PICKED(R.string.not_picked),
-        PLAYING_IN_QUARTERS(R.string.playing_in_quarterfinals),
-        ELIMINATED_IN_QUARTERS(R.string.eliminated_in_quarterfinals),
-        PLAYING_IN_SEMIS(R.string.playing_in_semifinals),
-        ELIMINATED_IN_SEMIS(R.string.eliminated_in_semifinals),
-        PLAYING_IN_FINALS(R.string.playing_in_finals),
-        ELIMINATED_IN_FINALS(R.string.eliminated_in_finals),
-        WON_EVENT(R.string.won_event),
-        NOT_AVAILABLE(R.string.not_available),
-        NO_ALLIANCE_DATA(R.string.no_alli_data);
+        PLAYING_IN_QUALS(R.string.status_playing_in_quals),
+        NOT_PICKED(R.string.status_not_picked),
+        PLAYING_IN_QUARTERS(R.string.status_playing_in_quarterfinals),
+        ELIMINATED_IN_QUARTERS(R.string.status_eliminated_in_quarterfinals),
+        PLAYING_IN_SEMIS(R.string.status_playing_in_semifinals),
+        ELIMINATED_IN_SEMIS(R.string.status_eliminated_in_semifinals),
+        PLAYING_IN_FINALS(R.string.status_playing_in_finals),
+        ELIMINATED_IN_FINALS(R.string.status_eliminated_in_finals),
+        WON_EVENT(R.string.status_won_event),
+        NOT_AVAILABLE(R.string.status_not_available),
+        NO_ALLIANCE_DATA(R.string.status_no_alliance_data);
         public int descriptionId;
 
         EventStatus(int descriptionId) {

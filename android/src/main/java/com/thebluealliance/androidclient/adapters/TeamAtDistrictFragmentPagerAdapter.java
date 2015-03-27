@@ -1,9 +1,11 @@
 package com.thebluealliance.androidclient.adapters;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.thebluealliance.androidclient.R;
 import com.thebluealliance.androidclient.fragments.district.TeamAtDistrictBreakdownFragment;
 import com.thebluealliance.androidclient.fragments.district.TeamAtDistrictSummaryFragment;
 
@@ -12,12 +14,17 @@ import com.thebluealliance.androidclient.fragments.district.TeamAtDistrictSummar
  */
 public class TeamAtDistrictFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public final String[] TITLES = {"Summary", "Breakdown"};
+    public final static int[] TAB_TITLE_RES_IDS = {R.string.team_at_district_tab_summary, R.string.team_at_district_tab_breakdown};
+
+    private static final int TAB_SUMMARY = 0, TAB_BREAKDOWN = 1;
 
     private String mDistrictKey, mTeamKey;
 
-    public TeamAtDistrictFragmentPagerAdapter(FragmentManager fm, String teamKey, String districtKey) {
+    private Context context;
+
+    public TeamAtDistrictFragmentPagerAdapter(Context context, FragmentManager fm, String teamKey, String districtKey) {
         super(fm);
+        this.context = context.getApplicationContext();
         mTeamKey = teamKey;
         mDistrictKey = districtKey;
     }
@@ -27,10 +34,10 @@ public class TeamAtDistrictFragmentPagerAdapter extends FragmentPagerAdapter {
         Fragment f;
         switch (position) {
             default:
-            case 0:
+            case TAB_SUMMARY:
                 f = TeamAtDistrictSummaryFragment.newInstance(mTeamKey, mDistrictKey);
                 break;
-            case 1:
+            case TAB_BREAKDOWN:
                 f = TeamAtDistrictBreakdownFragment.newInstance(mTeamKey, mDistrictKey);
                 break;
         }
@@ -39,11 +46,11 @@ public class TeamAtDistrictFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return TITLES[position];
+        return context.getString(TAB_TITLE_RES_IDS[position]);
     }
 
     @Override
     public int getCount() {
-        return TITLES.length;
+        return TAB_TITLE_RES_IDS.length;
     }
 }

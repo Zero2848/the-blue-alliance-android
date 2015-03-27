@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mytba_default_user_name">MyTBA User</string>
+    <string name="mytba_no_favorite_data">No favorites found.</string>
+    <string name="mytba_no_subscription_data">No subscriptions found</string>
+    <string name="mytba_error">Error code %1$d: %2$s</string>
+    <string name="mytba_favorite_title">Favorite</string>
+    <string name="mytba_favorite_summary">You can save teams, events, and more for easy access by marking them as "favorites".</string>
+    <string name="mytba_subscription_header">Notification Settings</string>
+    <string name="mytba_subscriptions_summary">Subscribing to something lets you get a push notification whenever there is an update.</string>
+    <string name="mytba_error_no_account">Unable to get account. Is myTBA enabled?</string>
+    <string name="title_activity_notification_dashboard">Notification Dashboard</string>
+    <string name="notification_dashboard_no_notifications">You do not have any recent notifications.</string>
+    <string name="notification_dashboard_title">Recent Notifications</string>
+
+    <!-- Tab titles -->
+    <string name="mytba_tab_favorites">Favorites</string>
+    <string name="mytba_tab_subscriptions">Subscriptions</string>
+</resources>

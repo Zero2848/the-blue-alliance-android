@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_event_info">Info</string>
+    <string name="tab_event_rankings">Rankings</string>
+    <string name="tab_event_awards">Awards</string>
+    <string name="tab_event_teams">Teams</string>
+    <string name="tab_event_stats">Stats</string>
+    <string name="tab_event_matches">Matches</string>
+    <string name="tab_event_alliances">Alliances</string>
+    <string name="tab_event_district_points">District Points</string>
+    <string name="last_match">Last Match:</string>
+    <string name="next_match">Next Match:</string>
+    <string name="top_teams">Top Teams:</string>
+    <string name="top_opr">Top OPRs:</string>
+    <string name="opr">OPR:</string>
+    <string name="dpr">DPR:</string>
+    <string name="ccwm">CCWM:</string>
+    <string name="alliance_title">Alliance #%d:</string>
+    <string name="team_rank">Rank %d</string>
+    <string name="no_location_available">No location available</string>
+</resources>

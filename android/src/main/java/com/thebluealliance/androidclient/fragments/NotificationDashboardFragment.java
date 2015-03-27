@@ -26,7 +26,7 @@ import com.thebluealliance.androidclient.listitems.ListItem;
 /**
  * Created by phil on 2/3/15.
  */
-public class NotificationDashboardFragment extends Fragment implements RefreshListener{
+public class NotificationDashboardFragment extends Fragment implements RefreshListener {
     
     private PopulateNotificationDashboard task;
     private Activity parent;

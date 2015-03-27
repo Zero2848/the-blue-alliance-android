@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="team_at_district_tab_summary">Summary</string>
+    <string name="team_at_district_tab_breakdown">Breakdown</string>
+</resources>

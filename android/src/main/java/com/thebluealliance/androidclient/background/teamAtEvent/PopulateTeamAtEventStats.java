@@ -66,13 +66,13 @@ public class PopulateTeamAtEventStats extends AsyncTask<String, Void, APIRespons
 
             statsList = new ArrayList<>();
             if (statData.has("opr")) {
-                statsList.add(new LabelValueListItem(activity.getString(R.string.opr_no_colon), Stat.displayFormat.format(statData.get("opr").getAsDouble())));
+                statsList.add(new LabelValueListItem(activity.getString(R.string.team_at_event_opr_no_colon), Stat.displayFormat.format(statData.get("opr").getAsDouble())));
             }
             if (statData.has("dpr")) {
-                statsList.add(new LabelValueListItem(activity.getString(R.string.dpr_no_colon), Stat.displayFormat.format(statData.get("dpr").getAsDouble())));
+                statsList.add(new LabelValueListItem(activity.getString(R.string.team_at_event_dpr_no_colon), Stat.displayFormat.format(statData.get("dpr").getAsDouble())));
             }
             if (statData.has("ccwm")) {
-                statsList.add(new LabelValueListItem(activity.getString(R.string.ccwm_no_colon), Stat.displayFormat.format(statData.get("ccwm").getAsDouble())));
+                statsList.add(new LabelValueListItem(activity.getString(R.string.team_at_event_ccwm_no_colon), Stat.displayFormat.format(statData.get("ccwm").getAsDouble())));
             }
 
         } catch (DataManager.NoDataException e) {

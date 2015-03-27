@@ -78,7 +78,7 @@ public class TeamAtDistrictActivity extends RefreshableHostActivity {
         hideWarningMessage();
 
         pager = (ViewPager) findViewById(R.id.view_pager);
-        adapter = new TeamAtDistrictFragmentPagerAdapter(getSupportFragmentManager(), teamKey, districtKey);
+        adapter = new TeamAtDistrictFragmentPagerAdapter(this, getSupportFragmentManager(), teamKey, districtKey);
         pager.setAdapter(adapter);
         // To support refreshing, all pages must be held in memory at once
         // This should be increased if we ever add more pages

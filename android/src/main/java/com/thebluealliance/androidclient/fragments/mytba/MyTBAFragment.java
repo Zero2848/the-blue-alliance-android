@@ -15,6 +15,7 @@ import com.thebluealliance.androidclient.Utilities;
 import com.thebluealliance.androidclient.accounts.AccountHelper;
 import com.thebluealliance.androidclient.activities.AuthenticatorActivity;
 import com.thebluealliance.androidclient.adapters.MyTBAFragmentPagerAdapter;
+import com.thebluealliance.androidclient.datafeed.DataManager;
 import com.thebluealliance.androidclient.views.SlidingTabs;
 
 /**
@@ -70,7 +71,7 @@ public class MyTBAFragment extends Fragment {
          */
         mViewPager.post(new Runnable() {
             public void run() {
-                mViewPager.setAdapter(new MyTBAFragmentPagerAdapter(getChildFragmentManager()));
+                mViewPager.setAdapter(new MyTBAFragmentPagerAdapter(MyTBAFragment.this.getActivity(), getChildFragmentManager()));
                 mTabs.setViewPager(mViewPager);
             }
         });

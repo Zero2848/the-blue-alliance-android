@@ -241,7 +241,7 @@ public class PopulateTeamAtEventSummary extends AsyncTask<String, Void, APIRespo
             // If the adapter has no children, display a generic "no data" message.
             // Otherwise, show the list as normal.
             if (code == APIResponse.CODE.NODATA || (!requestParams.forceFromCache && summary.isEmpty())) {
-                noDataText.setText(R.string.not_available);
+                noDataText.setText(R.string.status_not_available);
                 noDataText.setVisibility(View.VISIBLE);
             } else {
                 noDataText.setVisibility(View.GONE);
@@ -302,12 +302,12 @@ public class PopulateTeamAtEventSummary extends AsyncTask<String, Void, APIRespo
                     break;
             }
             if (alliancePick == -1) {
-                summary = String.format(r.getString(R.string.alliance_summary_no_pick_num), args[0]);
+                summary = String.format(r.getString(R.string.team_at_event_alliance_summary_no_pick_num), args[0]);
             } else {
-                summary = String.format(r.getString(R.string.alliance_summary), args[0], args[1]);
+                summary = String.format(r.getString(R.string.team_at_event_alliance_summary), args[0], args[1]);
             }
         } else {
-            summary = r.getString(R.string.not_picked);
+            summary = r.getString(R.string.status_not_picked);
         }
         return summary;
     }
